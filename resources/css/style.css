@@ -1,0 +1,147 @@
+/* 
+# Template Name: Bootstrap Resume by Stacy Denunzio
+# Version: 1.1 // I have a lot to learn including Sass, more playing with @Media support in BS3, 
+# 		default grid classes for xs, sm,etc breakpoints and push/pull of columns. 
+# Author: Stacy Denunzio
+*/
+/* re-compile custom bootstrap with this */
+.container {
+  background-color: #fff; }
+
+h1, h2 {
+  text-transform: uppercase; }
+
+.panel-title {
+  color: #3F8689; }
+
+.sub-title {
+  color: #769F41;
+  font-style: italic; }
+
+.job-title {
+  color: #3F8689; }
+
+.header {
+  background-color: #fff;
+  height: 20px; }
+
+.profile {
+  font-size: 40px;
+  font-weight: 600; }
+
+.profile-title {
+  color: #3F8689;
+  font-weight: 500; }
+
+.profile-pic {
+  margin: 0 auto;
+  /*text-align:center;*/ }
+
+.reg-icon {
+  color: #769F41;
+  float: left;
+  padding: 5px; }
+
+.panel-heading {
+  cursor: pointer; }
+
+.panel-heading:hover {
+  background-color: #EEEEEE; }
+
+.accordion-toggle h4:after {
+  font-family: "FontAwesome";
+  content: "\f063";
+  /* fa-arrow-right*/
+  float: right;
+  color: grey; }
+
+.accordion-toggle.collapsed h4:after {
+  content: "\f061";
+  /* fa-arrow-down*/ }
+
+.border-left {
+  border-style: none;
+  border-left: 3px dotted #EEEEEE; }
+
+.border-right {
+  border-style: none;
+  border-right: 3px dotted #EEEEEE; }
+
+.border-bottom {
+  border-style: none;
+  border-bottom: 3px dotted #EEEEEE; }
+
+.border-top {
+  border-style: none;
+  border-top: 3px dotted #EEEEEE; }
+
+.contact-list a {
+  color: #3F8689;
+  padding: 0px 0px 0px 0px; }
+
+.references a {
+  color: #3F8689; }
+
+.contact-list {
+  padding: 20px;
+  font-size: 18px; }
+
+.contact-list a:hover {
+  text-decoration: none; }
+
+.contact-list a:focus {
+  text-decoration: none; }
+
+.panel-seperator {
+  margin: 5px 0px 5px 0px;
+  height: 5px;
+  background-color: #EEEEEE; }
+
+.footer {
+  height: 40px;
+  background-color: #545E6C; }
+
+.copyright {
+  padding: 10px 5px 0px 0px;
+  color: #fff; }
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .experience {
+    border-left: none;
+    border-top: 3px dotted #EEEEEE; }
+
+  .contact-list {
+    border-left: none; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .profile, .profile-title {
+    text-align: left;
+    font-size: 24px; }
+
+  .contact-list {
+    text-align: center; } }
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* For portrait layouts only */
+  .contact-list {
+    text-align: center;
+    border-left: none; }
+
+  .profile, .profile-title {
+    font-size: 24px; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .copyright {
+    text-align: center; }
+
+  .profile, .profile-title {
+    text-align: center;
+    font-size: 24px; }
+
+  blockquote {
+    border-left: none; } }
+/* Custom, iPhone Retina */
+
+/*# sourceMappingURL=style.css.map */
