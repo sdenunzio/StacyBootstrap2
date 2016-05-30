@@ -12,7 +12,7 @@ h1, h2 {
   text-transform: uppercase; }
 
 .panel-title {
-  color: #3F8689; }
+  color: #769F41; }
 
 .sub-title {
   color: #769F41;
@@ -88,11 +88,11 @@ h1, h2 {
 
 .contact-list a:hover {
   text-decoration: none;
-  text-shadow: black 0.01em 0.01em 0.02em; }
+  color: #545E6C; }
 
 .contact-list a:focus {
   text-decoration: none;
-  text-shadow: black 0.01em 0.01em 0.02em; }
+  color: #545E6C; }
 
 .panel-seperator {
   margin: 5px 0px 5px 0px;
