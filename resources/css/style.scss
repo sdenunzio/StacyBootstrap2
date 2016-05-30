@@ -21,7 +21,7 @@ h1,h2{
 }
 
 .panel-title{
-	color: $accent-color2;
+	color: $accent-color1;
 }
 
 .sub-title{
@@ -115,10 +115,12 @@ h1,h2{
 
 .contact-list a:hover{
 	text-decoration: none;
+	color: $text-color;
 }
 
 .contact-list a:focus{
 	text-decoration: none;
+	color: $text-color;
 }
 
 .panel-seperator{
@@ -132,7 +134,7 @@ h1,h2{
 }
 
 section#skills .progress {
-	background-color: #FFF;
+	background-color:$text-color ;
 	border-radius: 0;
 	border: 1px solid $text-color;
 	box-shadow: none;
@@ -142,8 +144,8 @@ section#skills .progress {
 	margin-bottom: 12px;
 }
 section#skills .progress .progress-bar {
-	background-color: $accent-color1;
-	border-right: 2px solid $text-color;
+	background-color: #262B37;
+	border-right: 2px solid $accent-color1;
 	box-shadow: none;
 	color: $seperator-color;
 	font-size: 12px;
