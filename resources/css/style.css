@@ -101,7 +101,7 @@ h1, h2 {
   padding: 10px; }
 
 section#skills .progress {
-  background-color: #FFF;
+  background-color: #545E6C;
   border-radius: 0;
   border: 1px solid #545E6C;
   box-shadow: none;
@@ -111,8 +111,8 @@ section#skills .progress {
   margin-bottom: 12px; }
 
 section#skills .progress .progress-bar {
-  background-color: #769F41;
-  border-right: 2px solid #545E6C;
+  background-color: #262B37;
+  border-right: 2px solid #769F41;
   box-shadow: none;
   color: #EEEEEE;
   font-size: 12px;
