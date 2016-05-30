@@ -1,7 +1,7 @@
-/* 
+/*
 # Template Name: Bootstrap Resume by Stacy Denunzio
-# Version: 1.1 // I have a lot to learn including Sass, more playing with @Media support in BS3, 
-# 		default grid classes for xs, sm,etc breakpoints and push/pull of columns. 
+# Version: 1.1 // I have a lot to learn including Sass, more playing with @Media support in BS3,
+# 		default grid classes for xs, sm,etc breakpoints and push/pull of columns.
 # Author: Stacy Denunzio
 */
 /* re-compile custom bootstrap with this */
@@ -96,6 +96,46 @@ h1, h2 {
   margin: 5px 0px 5px 0px;
   height: 5px;
   background-color: #EEEEEE; }
+
+.skillchart {
+  padding: 10px; }
+
+section#skills .progress {
+  background-color: #FFF;
+  border-radius: 0;
+  border: 1px solid #545E6C;
+  box-shadow: none;
+  height: 35px;
+  line-height: 35px;
+  padding: 0;
+  margin-bottom: 12px; }
+
+section#skills .progress .progress-bar {
+  background-color: #769F41;
+  border-right: 2px solid #545E6C;
+  box-shadow: none;
+  color: #EEEEEE;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 33px;
+  text-transform: uppercase; }
+
+section#skills .progress.level {
+  background-color: inherit;
+  border: 0;
+  border-bottom: 1px dotted #545E6C;
+  border-left: 1px dotted #545E6C;
+  border-right: 1px dotted #545E6C; }
+
+section#skills .progress.level .progress-bar {
+  background-color: inherit;
+  box-shadow: none;
+  border-right: 1px dotted #545E6C;
+  color: #00a69a;
+  font-size: 11px; }
+
+section#skills .progress.level .progress-bar:last-child {
+  border-right: none; }
 
 .footer {
   height: 40px;

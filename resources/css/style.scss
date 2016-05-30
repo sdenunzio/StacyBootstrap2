@@ -1,13 +1,14 @@
-/* 
+/*
 # Template Name: Bootstrap Resume by Stacy Denunzio
-# Version: 1.1 // I have a lot to learn including Sass, more playing with @Media support in BS3, 
-# 		default grid classes for xs, sm,etc breakpoints and push/pull of columns. 
+# Version: 1.1 // I have a lot to learn including Sass, more playing with @Media support in BS3,
+# 		default grid classes for xs, sm,etc breakpoints and push/pull of columns.
 # Author: Stacy Denunzio
 */
 
 $accent-color1:  #769F41;
 $accent-color2:  #3F8689;
 $seperator-color: #EEEEEE;
+$text-color: #545E6C;
 $border-dotted: 3px dotted $seperator-color;
 
 /* re-compile custom bootstrap with this */
@@ -124,13 +125,54 @@ h1,h2{
 	margin: 5px 0px 5px 0px;
 	height: 5px;
 	background-color: $seperator-color;
-	
+}
+
+.skillchart{
+	padding: 10px;
+}
+
+section#skills .progress {
+	background-color: #FFF;
+	border-radius: 0;
+	border: 1px solid $text-color;
+	box-shadow: none;
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	margin-bottom: 12px;
+}
+section#skills .progress .progress-bar {
+	background-color: $accent-color1;
+	border-right: 2px solid $text-color;
+	box-shadow: none;
+	color: $seperator-color;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 33px;
+	text-transform: uppercase;
+}
+section#skills .progress.level {
+	background-color: inherit;
+	border: 0;
+	border-bottom: 1px dotted $text-color;
+	border-left: 1px dotted $text-color;
+	border-right: 1px dotted $text-color;
+}
+section#skills .progress.level .progress-bar {
+	background-color: inherit;
+	box-shadow: none;
+	border-right: 1px dotted $text-color;
+	color: #00a69a;
+	font-size: 11px;
+}
+section#skills .progress.level .progress-bar:last-child {
+	border-right: none;
 }
 
 .footer{
 	height: 40px;
 	background-color: #545E6C;
-	
+
 }
 
 .copyright{
@@ -140,20 +182,20 @@ h1,h2{
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.experience{
 		border-left:none;
-		border-top: $border-dotted;	
+		border-top: $border-dotted;
 	}
-	
+
 	.contact-list{
 		border-left:none;
 	}
-	
+
 }
 
 /* Small Devices, Tablets */
@@ -177,13 +219,13 @@ h1,h2{
 		text-align: center;
 		border-left:none;
 	}
-	
+
 	.profile, .profile-title{
 		font-size: 24px;
 	}
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
 	.copyright{
@@ -193,16 +235,16 @@ h1,h2{
 		text-align: center;
 		font-size: 24px;
 	}
-	
+
 	blockquote{
 		border-left:none;
 	}
-	
 
-	
+
+
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-  
+
 }
