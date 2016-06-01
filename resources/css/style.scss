@@ -1,6 +1,6 @@
 /*
 # Template Name: Bootstrap Resume by Stacy Denunzio
-# Version: 1.1 // I have a lot to learn including Sass, more playing with @Media support in BS3,
+# Version: 1.1 // I have a lot to learn including fully utilizing Sass (scss), @Media breakpoint support in BS3,
 # 		default grid classes for xs, sm,etc breakpoints and push/pull of columns.
 # Author: Stacy Denunzio
 */
@@ -11,7 +11,7 @@ $seperator-color: #EEEEEE;
 $text-color: #545E6C;
 $border-dotted: 3px dotted $seperator-color;
 
-/* re-compile custom bootstrap with this */
+/* re-compile custom bootstrap with this (update json config)*/
 .container{
 	background-color: #fff;
 }
