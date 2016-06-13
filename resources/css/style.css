@@ -1,10 +1,10 @@
 /*
 # Template Name: Bootstrap Resume by Stacy Denunzio
-# Version: 1.1 // I have a lot to learn including Sass, more playing with @Media support in BS3,
+# Version: 1.1 // I have a lot to learn including fully utilizing Sass (scss), @Media breakpoint support in BS3,
 # 		default grid classes for xs, sm,etc breakpoints and push/pull of columns.
 # Author: Stacy Denunzio
 */
-/* re-compile custom bootstrap with this */
+/* re-compile custom bootstrap with container background (update json config)*/
 .container {
   background-color: #fff; }
 
@@ -34,8 +34,11 @@ h1, h2 {
   font-weight: 500; }
 
 .profile-pic {
-  margin: 0 auto;
+  perspective: 500px;
   /*text-align:center;*/ }
+
+.profile-pic:hover {
+  transform: rotateY(180deg); }
 
 .reg-icon {
   color: #769F41;
@@ -75,30 +78,58 @@ h1, h2 {
   border-style: none;
   border-top: 3px dotted #EEEEEE; }
 
-.contact-list a {
-  color: #3F8689;
-  padding: 0px 0px 0px 0px; }
-
 .references a {
   color: #3F8689; }
 
 .contact-list {
   padding: 20px;
   font-size: 18px; }
-
-.contact-list a:hover {
-  text-decoration: none;
-  color: #545E6C; }
-
-.contact-list a:focus {
-  text-decoration: none;
-  color: #545E6C; }
+  .contact-list a {
+    color: #3F8689;
+    padding: 0px 0px 0px 0px; }
+  .contact-list a:hover {
+    text-decoration: none;
+    color: #545E6C; }
+  .contact-list a:focus {
+    text-decoration: none;
+    color: #545E6C; }
 
 .panel-seperator {
   margin: 5px 0px 5px 0px;
   height: 5px;
   background-color: #EEEEEE; }
 
+.myappear {
+  opacity: 0;
+  animation: myappear 2s;
+  animation-fill-mode: forwards; }
+  .myappear:nth-child(1) {
+    animation-delay: 0.3s; }
+  .myappear:nth-child(2) {
+    animation-delay: 0.6s; }
+  .myappear:nth-child(3) {
+    animation-delay: 0.9s; }
+  .myappear:nth-child(4) {
+    animation-delay: 1.2s; }
+  .myappear:nth-child(5) {
+    animation-delay: 1.5s; }
+  .myappear:nth-child(6) {
+    animation-delay: 1.8s; }
+  .myappear:nth-child(7) {
+    animation-delay: 2.1s; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myappear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* Standard syntax */
+@keyframes myappear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .skillchart {
   padding: 10px; }
 
@@ -111,16 +142,15 @@ section#skills .progress {
   line-height: 35px;
   padding: 0;
   margin-bottom: 12px; }
-
-section#skills .progress .progress-bar {
-  background-color: #262B37;
-  border-right: 2px solid #769F41;
-  box-shadow: none;
-  color: #EEEEEE;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 33px;
-  text-transform: uppercase; }
+  section#skills .progress .progress-bar {
+    background-color: #262B37;
+    border-right: 2px solid #769F41;
+    box-shadow: none;
+    color: #EEEEEE;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 33px;
+    text-transform: uppercase; }
 
 section#skills .progress.level {
   background-color: inherit;
@@ -128,13 +158,12 @@ section#skills .progress.level {
   border-bottom: 1px dotted #545E6C;
   border-left: 1px dotted #545E6C;
   border-right: 1px dotted #545E6C; }
-
-section#skills .progress.level .progress-bar {
-  background-color: inherit;
-  box-shadow: none;
-  border-right: 1px dotted #545E6C;
-  color: #00a69a;
-  font-size: 11px; }
+  section#skills .progress.level .progress-bar {
+    background-color: inherit;
+    box-shadow: none;
+    border-right: 1px dotted #545E6C;
+    color: #00a69a;
+    font-size: 11px; }
 
 section#skills .progress.level .progress-bar:last-child {
   border-right: none; }

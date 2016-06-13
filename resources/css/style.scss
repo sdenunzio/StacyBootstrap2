@@ -1,6 +1,6 @@
 /*
 # Template Name: Bootstrap Resume by Stacy Denunzio
-# Version: 1.1 // I have a lot to learn including Sass, more playing with @Media support in BS3,
+# Version: 1.1 // I have a lot to learn including fully utilizing Sass (scss), @Media breakpoint support in BS3,
 # 		default grid classes for xs, sm,etc breakpoints and push/pull of columns.
 # Author: Stacy Denunzio
 */
@@ -10,10 +10,11 @@ $accent-color2:  #3F8689;
 $seperator-color: #EEEEEE;
 $text-color: #545E6C;
 $border-dotted: 3px dotted $seperator-color;
+$back-ground-color: #fff;
 
-/* re-compile custom bootstrap with this */
+/* re-compile custom bootstrap with container background (update json config)*/
 .container{
-	background-color: #fff;
+	background-color: $back-ground-color;
 }
 
 h1,h2{
@@ -34,7 +35,7 @@ h1,h2{
 }
 
 .header{
-	background-color: #fff;
+	background-color: $back-ground-color;
 	height: 20px
 }
 
@@ -49,8 +50,12 @@ h1,h2{
 }
 
 .profile-pic {
-	margin: 0 auto;
+	perspective: 500px;
 	/*text-align:center;*/
+}
+
+.profile-pic:hover{
+	transform: rotateY(180deg);
 }
 
 .reg-icon{
@@ -99,11 +104,6 @@ h1,h2{
 }
 
 
-.contact-list a{
-	color: $accent-color2;
-	padding: 0px 0px 0px 0px;
-}
-
 .references a{
 	color: $accent-color2;
 }
@@ -111,16 +111,22 @@ h1,h2{
 .contact-list{
 	padding: 20px;
 	font-size: 18px;
-}
 
-.contact-list a:hover{
-	text-decoration: none;
-	color: $text-color;
-}
+	a{
+		color: $accent-color2;
+		padding: 0px 0px 0px 0px;
+	}
 
-.contact-list a:focus{
-	text-decoration: none;
-	color: $text-color;
+	a:hover{
+		text-decoration: none;
+		color: $text-color;
+	}
+
+	a:focus{
+		text-decoration: none;
+		color: $text-color;
+	}
+
 }
 
 .panel-seperator{
@@ -128,6 +134,30 @@ h1,h2{
 	height: 5px;
 	background-color: $seperator-color;
 }
+
+.myappear{
+	opacity:0;
+	animation: myappear 2s;
+	animation-fill-mode: forwards;
+	@for $i from 1 through 7 {
+		&:nth-child(#{$i}) {
+			animation-delay:0.3s * $i;
+		}
+	}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myappear {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myappear {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+
 
 .skillchart{
 	padding: 10px;
@@ -142,31 +172,36 @@ section#skills .progress {
 	line-height: 35px;
 	padding: 0;
 	margin-bottom: 12px;
+
+	.progress-bar {
+		background-color: #262B37;
+		border-right: 2px solid $accent-color1;
+		box-shadow: none;
+		color: $seperator-color;
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 33px;
+		text-transform: uppercase;
+	}
+
 }
-section#skills .progress .progress-bar {
-	background-color: #262B37;
-	border-right: 2px solid $accent-color1;
-	box-shadow: none;
-	color: $seperator-color;
-	font-size: 12px;
-	font-weight: 300;
-	line-height: 33px;
-	text-transform: uppercase;
-}
+
 section#skills .progress.level {
 	background-color: inherit;
 	border: 0;
 	border-bottom: 1px dotted $text-color;
 	border-left: 1px dotted $text-color;
 	border-right: 1px dotted $text-color;
+
+	.progress-bar {
+		background-color: inherit;
+		box-shadow: none;
+		border-right: 1px dotted $text-color;
+		color: #00a69a;
+		font-size: 11px;
+	}
 }
-section#skills .progress.level .progress-bar {
-	background-color: inherit;
-	box-shadow: none;
-	border-right: 1px dotted $text-color;
-	color: #00a69a;
-	font-size: 11px;
-}
+
 section#skills .progress.level .progress-bar:last-child {
 	border-right: none;
 }
@@ -241,9 +276,6 @@ section#skills .progress.level .progress-bar:last-child {
 	blockquote{
 		border-left:none;
 	}
-
-
-
 }
 
 /* Custom, iPhone Retina */
