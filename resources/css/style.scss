@@ -185,14 +185,11 @@ section.aboutme::after {
 	color: $accent-color2;
 }
 
-
-
-
-.myappear{
+section{
 	opacity:0;
 	animation: myappear 2s;
 	animation-fill-mode: forwards;
-	@for $i from 1 through 7 {
+	@for $i from 1 through 9 {
 		&:nth-child(#{$i}) {
 			animation-delay:0.3s * $i;
 		}
