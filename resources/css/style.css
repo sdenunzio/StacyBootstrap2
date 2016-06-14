@@ -40,6 +40,19 @@ h1, h2 {
 .profile-pic:hover {
   transform: rotateY(180deg); }
 
+.contact-list {
+  padding: 20px;
+  font-size: 18px; }
+  .contact-list a {
+    color: #545E6C;
+    padding: 0px 0px 0px 0px; }
+  .contact-list a:hover {
+    text-decoration: none;
+    color: #545E6C; }
+  .contact-list a:focus {
+    text-decoration: none;
+    color: #545E6C; }
+
 .panel-seperator {
   margin: 5px 0px 5px 0px;
   height: 5px;
@@ -123,19 +136,6 @@ section.aboutme::after {
 
 .references a {
   color: #3F8689; }
-
-.contact-list {
-  padding: 20px;
-  font-size: 18px; }
-  .contact-list a {
-    color: #3F8689;
-    padding: 0px 0px 0px 0px; }
-  .contact-list a:hover {
-    text-decoration: none;
-    color: #545E6C; }
-  .contact-list a:focus {
-    text-decoration: none;
-    color: #545E6C; }
 
 .myappear {
   opacity: 0;
