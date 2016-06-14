@@ -8,6 +8,9 @@
 .container {
   background-color: #fff; }
 
+.github-fork-ribbon.right-top:before {
+  background-color: #545E6C; }
+
 h1, h2 {
   text-transform: uppercase; }
 
