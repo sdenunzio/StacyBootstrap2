@@ -278,6 +278,7 @@ section#skills .progress.level .progress-bar:last-child {
 
 	.contact-list{
 		border-left:none;
+			text-align: center;
 	}
 
 }
@@ -286,11 +287,16 @@ section#skills .progress.level .progress-bar:last-child {
 @media only screen and (max-width : 768px){
 
 	.profile, .profile-title{
-		text-align: left;
+		text-align: center;
 		font-size: 24px;
 	}
 
 	.contact-list{
+		text-align: center;
+	}
+
+	blockquote{
+		border-left:none;
 		text-align: center;
 	}
 
@@ -312,6 +318,11 @@ section#skills .progress.level .progress-bar:last-child {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
+	.contact-list{
+		text-align: center;
+		border-left:none;
+	}
+
 	.copyright{
 		text-align:center;
 	}
@@ -323,9 +334,4 @@ section#skills .progress.level .progress-bar:last-child {
 	blockquote{
 		border-left:none;
 	}
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
 }

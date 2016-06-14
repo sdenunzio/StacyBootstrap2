@@ -222,14 +222,19 @@ section#skills .progress.level .progress-bar:last-child {
     border-top: 3px dotted #EEEEEE; }
 
   .contact-list {
-    border-left: none; } }
+    border-left: none;
+    text-align: center; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .profile, .profile-title {
-    text-align: left;
+    text-align: center;
     font-size: 24px; }
 
   .contact-list {
+    text-align: center; }
+
+  blockquote {
+    border-left: none;
     text-align: center; } }
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -242,6 +247,10 @@ section#skills .progress.level .progress-bar:last-child {
     font-size: 24px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .contact-list {
+    text-align: center;
+    border-left: none; }
+
   .copyright {
     text-align: center; }
 
@@ -251,6 +260,5 @@ section#skills .progress.level .progress-bar:last-child {
 
   blockquote {
     border-left: none; } }
-/* Custom, iPhone Retina */
 
 /*# sourceMappingURL=style.css.map */
