@@ -6,7 +6,8 @@
 */
 /* re-compile custom bootstrap with container background (update json config)*/
 .container {
-  background-color: #fff; }
+  background-color: #fff;
+  border: 1px solid #EEEEEE; }
 
 .github-fork-ribbon.right-top:before {
   background-color: #545E6C; }

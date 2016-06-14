@@ -15,6 +15,7 @@ $back-ground-color: #fff;
 /* re-compile custom bootstrap with container background (update json config)*/
 .container{
 	background-color: $back-ground-color;
+	border: 1px solid $seperator-color;
 }
 
 .github-fork-ribbon.right-top:before{
