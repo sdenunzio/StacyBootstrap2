@@ -19,6 +19,7 @@ $back-ground-color: #fff;
 
 .github-fork-ribbon.right-top:before{
 	background-color: $text-color;
+	color: #fff;
 }
 
 h1,h2{
@@ -26,7 +27,7 @@ h1,h2{
 }
 
 .col-md-6{
-	padding: 2em;
+	padding: 0 3em 0 3em ;
 }
 
 .sidebar{
@@ -163,13 +164,6 @@ section.aboutme::after {
 .am-icon{
 	color: $back-ground-color;
 }
-.panel-heading {
-	cursor: pointer;
-}
-
-.panel-heading:hover{
-	background-color: $seperator-color;
-}
 
 .accordion-toggle h4:after {
 	font-family:"FontAwesome";
@@ -206,6 +200,7 @@ section.aboutme::after {
 	color: $accent-color2;
 }
 
+/*fade in sections, nice effect to loading the screen*/
 section{
 	opacity:0;
 	animation: myappear 2s;
@@ -228,7 +223,6 @@ section{
 	0%   {opacity: 0;}
 	100% {opacity: 1;}
 }
-
 
 .skillchart{
 	padding: 10px;
@@ -300,34 +294,21 @@ section#skills .progress.level .progress-bar:last-child {
 		border-top: $border-dotted;
 	}
 
-	.contact-list{
-		border-left:none;
-			text-align: center;
+	.sidebar{
+		border-left: none;
 	}
-
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
-
 	.profile, .profile-title{
 		font-size: 24px;
 	}
-
-	.contact-list{
-		text-align: center;
-	}
-
 }
 
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 	/* For portrait layouts only */
-	.contact-list{
-		text-align: center;
-		border-left:none;
-	}
-
 	.profile, .profile-title{
 		font-size: 24px;
 	}
@@ -335,21 +316,11 @@ section#skills .progress.level .progress-bar:last-child {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
-	.contact-list{
-		text-align: center;
-		border-left:none;
-	}
-
 	.copyright{
 		text-align:center;
 	}
 	.profile, .profile-title{
 		text-align: center;
 		font-size: 24px;
-	}
-
-	blockquote{
-		border-left:none;
 	}
 }
