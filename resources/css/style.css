@@ -125,12 +125,18 @@ section.aboutme::after {
 .am-icon {
   color: #fff; }
 
+.panel-heading {
+  cursor: pointer; }
+
+.panel-heading:hover {
+  background-color: #DDDDDD; }
+
 .accordion-toggle h4:after {
   font-family: "FontAwesome";
   content: "\f063";
   /* fa-arrow-right*/
   float: right;
-  color: #545E6C; }
+  color: grey; }
 
 .accordion-toggle.collapsed h4:after {
   content: "\f061";
