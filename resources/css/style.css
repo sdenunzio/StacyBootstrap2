@@ -9,6 +9,9 @@
   background-color: #fff; }
 
 .github-fork-ribbon.right-top:before {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
   background-color: #545E6C;
   color: #fff; }
 
@@ -236,6 +239,9 @@ section#skills .progress.level .progress-bar:last-child {
 .footer {
   height: 40px;
   background-color: #545E6C; }
+
+.left-sidebar {
+  height: 100vh; }
 
 .copyright {
   padding: 10px 5px 0px 0px;
