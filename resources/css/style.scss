@@ -13,7 +13,7 @@ $border-dotted: 3px dotted $seperator-color;
 $back-ground-color: #fff;
 
 /* re-compile custom bootstrap with container background (update json config)*/
-.container{
+.container-fluid{
 	background-color: $back-ground-color;
 }
 
@@ -21,328 +21,334 @@ $back-ground-color: #fff;
 	animation:octocat-wave 560ms ease-in-out
 }
 @keyframes octocat-wave{
-	0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+	0%,100%{transform:rotate(0)}
+	20%,60%{transform:rotate(-25deg)}
+	40%,80%{transform:rotate(10deg)}
+}
 
+@media (max-width:500px){
+	.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}
+}
 
-	h1,h2{
-		text-transform: uppercase;
-		margin-bottom:20px;
+h1,h2{
+	text-transform: uppercase;
+	margin-bottom:20px;
+}
+
+.col-md-6{
+	padding: 0 3em 0 3em ;
+}
+
+.sidebar{
+	/*background-color: $accent-color1;*/
+	border-left: 2px solid $text-color;
+}
+
+div.experience:hover h4.job-title:after{
+	font-family:"FontAwesome";
+	content:"\f060";  /* fa-arrow-right*/
+	color: $text-color;
+}
+
+.affix-top,.affix{
+	position: static;
+}
+
+.panel-title,
+.sub-title,
+.reg-icon,
+.contact-info{
+	color: $accent-color1;
+}
+
+.sub-title{
+	font-style: italic;
+}
+
+.job-title, .profile-title{
+	color: $accent-color2;
+}
+
+.profile{
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.profile-title{
+	font-weight: 500;
+}
+
+.profile-pic {
+	padding: 1em;
+	/*text-align:center;*/
+}
+
+.profile-pic:hover{
+	opacity:.98;
+}
+
+.contact-list{
+	padding: 20px;
+	font-size: 18px;
+
+	a{
+		color: $text-color;
+		padding: 0px 0px 0px 0px;
 	}
 
-	.col-md-6{
-		padding: 0 3em 0 3em ;
-	}
-
-	.sidebar{
-		/*background-color: $accent-color1;*/
-		border-left: 2px solid $text-color;
-	}
-
-	div.experience:hover h4.job-title:after{
-		font-family:"FontAwesome";
-		content:"\f060";  /* fa-arrow-right*/
-		color: grey;
-	}
-
-	.affix-top,.affix{
-		position: static;
-	}
-
-	.panel-title,
-	.sub-title,
-	.reg-icon,
-	.contact-info{
-		color: $accent-color1;
-	}
-
-	.sub-title{
-		font-style: italic;
-	}
-
-	.job-title, .profile-title{
+	a:hover, a:focus{
+		text-decoration: none;
 		color: $accent-color2;
 	}
+}
 
-	.profile{
-		font-size: 40px;
-		font-weight: 600;
-	}
+.panel-seperator{
+	margin: 5px 0px 5px 0px;
+	height: 5px;
+	background-color: $seperator-color;
+}
 
-	.profile-title{
-		font-weight: 500;
-	}
+.column {
+	display: inline-block;
+	vertical-align: top;
+}
 
-	.profile-pic {
-		padding: 1em;
-		/*text-align:center;*/
-	}
+/* Aboutme seperator formatting */
+section.aboutme {
+	position: relative;
+	padding: 30px 60px 30px 60px ;
+	background: $accent-color1;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 400;
+	/*text-align: center;*/
+	margin-bottom: 30px;
+}
 
-	.profile-pic:hover{
-		opacity:.98;
-	}
+/* Common style for pseudo-elements */
+section.aboutme::before,
+section.aboutme::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
 
-	.contact-list{
-		padding: 20px;
-		font-size: 18px;
+section.aboutme::after {
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
 
-		a{
-			color: $text-color;
-			padding: 0px 0px 0px 0px;
+.ss-style-triangles::before {
+	top: -30px;
+	z-index: 10;
+	background: $back-ground-color;
+}
+
+.ss-style-triangles::after {
+	bottom: -20px;
+	z-index: 10;
+	background: $accent-color1;
+}
+
+/* end about me*/
+.reg-icon, .am-icon{
+	float: left;
+	padding: 0 5px 0 5px;
+}
+
+.fa-tasks{
+	margin-top: 5px;
+
+}
+
+.am-icon{
+	color: $back-ground-color;
+}
+
+
+.panel-heading {
+	cursor: pointer;
+}
+
+.panel-heading:hover{
+	background-color: $seperator-color;
+}
+
+.accordion-toggle h4:after {
+	font-family:"FontAwesome";
+	content:"\f063";  /* fa-arrow-right*/
+	float: right;
+	color: grey;
+}
+
+.accordion-toggle.collapsed h4:after {
+	content:"\f061"; /* fa-arrow-down*/
+}
+
+.border-left{
+	border-style: none;
+	border-left: $border-dotted;
+}
+
+.border-right{
+	border-style: none;
+	border-right: $border-dotted;
+}
+
+.border-bottom{
+	border-style: none;
+	border-bottom: $border-dotted;
+}
+
+.border-top{
+	border-style: none;
+	border-top: $border-dotted;
+}
+
+.references a{
+	color: $accent-color2;
+}
+
+/*fade in sections, nice effect to loading the screen*/
+section{
+	opacity:0;
+	animation: myappear 2s;
+	animation-fill-mode: forwards;
+	@for $i from 1 through 9 {
+		&:nth-child(#{$i}) {
+			animation-delay:0.3s * $i;
 		}
+	}
+}
 
-		a:hover, a:focus{
-			text-decoration: none;
-			color: $accent-color2;
-		}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myappear {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myappear {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.skillchart{
+	padding: 10px;
+}
+
+section#skills .progress {
+	background-color:$text-color ;
+	border-radius: 0;
+	border: 1px solid $text-color;
+	box-shadow: none;
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	margin-bottom: 12px;
+
+	.progress-bar {
+		background-color: #262B37;
+		border-right: 2px solid $accent-color1;
+		box-shadow: none;
+		color: $seperator-color;
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 33px;
+		text-transform: uppercase;
 	}
 
-	.panel-seperator{
-		margin: 5px 0px 5px 0px;
-		height: 5px;
-		background-color: $seperator-color;
+}
+
+section#skills .progress.level {
+	background-color: inherit;
+	border: 0;
+	border-bottom: 1px dotted $text-color;
+	border-left: 1px dotted $text-color;
+	border-right: 1px dotted $text-color;
+
+	.progress-bar {
+		background-color: inherit;
+		box-shadow: none;
+		border-right: 1px dotted $text-color;
+		color: #00a69a;
+		font-size: 11px;
 	}
+}
 
-	.column {
-		display: inline-block;
-		vertical-align: top;
-	}
+section#skills .progress.level .progress-bar:last-child {
+	border-right: none;
+}
 
-	/* Aboutme seperator formatting */
-	section.aboutme {
-		position: relative;
-		padding: 30px 60px 30px 60px ;
-		background: $accent-color1;
-		color: #fff;
-		font-size: 17px;
-		font-weight: 400;
-		/*text-align: center;*/
-		margin-bottom: 30px;
-	}
+.footer{
+	height: 40px;
+	background-color: #545E6C;
+}
 
-	/* Common style for pseudo-elements */
-	section.aboutme::before,
-	section.aboutme::after {
-		position: absolute;
-		content: '';
-		pointer-events: none;
-	}
+.left-sidebar{
+	height: 100vh;
+}
 
-	section.aboutme::after {
-		left: 50%;
-		width: 50px;
-		height: 50px;
-		-webkit-transform: translateX(-50%) rotate(45deg);
-		transform: translateX(-50%) rotate(45deg);
-	}
+.copyright{
+	padding: 10px 5px 0px 0px;
+	color: #fff;
+}
 
-	.ss-style-triangles::before {
-		top: -30px;
-		z-index: 10;
-		background: $back-ground-color;
-	}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
 
-	.ss-style-triangles::after {
-		bottom: -20px;
-		z-index: 10;
-		background: $accent-color1;
-	}
+}
 
-	/* end about me*/
-	.reg-icon, .am-icon{
-		float: left;
-		padding: 0 5px 0 5px;
-	}
-
-	.fa-tasks{
-		margin-top: 5px;
-
-	}
-
-	.am-icon{
-		color: $back-ground-color;
-	}
-
-
-	.panel-heading {
-		cursor: pointer;
-	}
-
-	.panel-heading:hover{
-		background-color: $seperator-color;
-	}
-
-	.accordion-toggle h4:after {
-		font-family:"FontAwesome";
-		content:"\f063";  /* fa-arrow-right*/
-		float: right;
-		color: grey;
-	}
-
-	.accordion-toggle.collapsed h4:after {
-		content:"\f061"; /* fa-arrow-down*/
-	}
-
-	.border-left{
-		border-style: none;
-		border-left: $border-dotted;
-	}
-
-	.border-right{
-		border-style: none;
-		border-right: $border-dotted;
-	}
-
-	.border-bottom{
-		border-style: none;
-		border-bottom: $border-dotted;
-	}
-
-	.border-top{
-		border-style: none;
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	section.experience{
+		border-left:none;
 		border-top: $border-dotted;
 	}
 
-	.references a{
-		color: $accent-color2;
+	.sidebar{
+		border-left: none;
 	}
 
-	/*fade in sections, nice effect to loading the screen*/
-	section{
-		opacity:0;
-		animation: myappear 2s;
-		animation-fill-mode: forwards;
-		@for $i from 1 through 9 {
-			&:nth-child(#{$i}) {
-				animation-delay:0.3s * $i;
-			}
-		}
+	.github-fork-ribbon{
+		visibility: hidden;
 	}
+}
 
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes myappear {
-		0%   {opacity: 0;}
-		100% {opacity: 1;}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+	.profile, .profile-title{
+		font-size: 24px;
 	}
+}
 
-	/* Standard syntax */
-	@keyframes myappear {
-		0%   {opacity: 0;}
-		100% {opacity: 1;}
-	}
 
-	.skillchart{
-		padding: 10px;
-	}
-
-	section#skills .progress {
-		background-color:$text-color ;
-		border-radius: 0;
-		border: 1px solid $text-color;
-		box-shadow: none;
-		height: 35px;
-		line-height: 35px;
-		padding: 0;
-		margin-bottom: 12px;
-
-		.progress-bar {
-			background-color: #262B37;
-			border-right: 2px solid $accent-color1;
-			box-shadow: none;
-			color: $seperator-color;
-			font-size: 12px;
-			font-weight: 300;
-			line-height: 33px;
-			text-transform: uppercase;
-		}
-
-	}
-
-	section#skills .progress.level {
-		background-color: inherit;
-		border: 0;
-		border-bottom: 1px dotted $text-color;
-		border-left: 1px dotted $text-color;
-		border-right: 1px dotted $text-color;
-
-		.progress-bar {
-			background-color: inherit;
-			box-shadow: none;
-			border-right: 1px dotted $text-color;
-			color: #00a69a;
-			font-size: 11px;
-		}
-	}
-
-	section#skills .progress.level .progress-bar:last-child {
-		border-right: none;
-	}
-
-	.footer{
-		height: 40px;
-		background-color: #545E6C;
-	}
-
-	.left-sidebar{
-		height: 100vh;
-	}
-
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
 	.copyright{
-		padding: 10px 5px 0px 0px;
-		color: #fff;
+		text-align:center;
+	}
+	.profile, .profile-title{
+		text-align: center;
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 979px) {
+	#contactInfo.affix-top {
+		position: static;
+		width:16%;
+		padding: 1em;
 	}
 
-	/* Large Devices, Wide Screens */
-	@media only screen and (max-width : 1200px) {
-
+	#contactInfo.affix {
+		position: fixed;
+		top:10px;
+		left: 10px;
+		width:16%;
+		overflow: hidden;
 	}
-
-	/* Medium Devices, Desktops */
-	@media only screen and (max-width : 992px) {
-		section.experience{
-			border-left:none;
-			border-top: $border-dotted;
-		}
-
-		.sidebar{
-			border-left: none;
-		}
-
-		.github-fork-ribbon{
-			visibility: hidden;
-		}
-	}
-
-	/* Small Devices, Tablets */
-	@media only screen and (max-width : 768px){
-		.profile, .profile-title{
-			font-size: 24px;
-		}
-	}
-
-
-	/* Extra Small Devices, Phones */
-	@media only screen and (max-width : 480px) {
-		.copyright{
-			text-align:center;
-		}
-		.profile, .profile-title{
-			text-align: center;
-			font-size: 24px;
-		}
-	}
-
-	@media (min-width: 979px) {
-		#contactInfo.affix-top {
-			position: static;
-			width:16%;
-			padding: 1em;
-		}
-
-		#contactInfo.affix {
-			position: fixed;
-			top:10px;
-			left: 10px;
-			width:16%;
-			overflow: hidden;
-		}
-	}
+}

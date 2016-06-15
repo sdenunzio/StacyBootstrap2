@@ -5,7 +5,7 @@
 # Author: Stacy Denunzio
 */
 /* re-compile custom bootstrap with container background (update json config)*/
-.container {
+.container-fluid {
   background-color: #fff; }
 
 .github-corner:hover .octo-arm {
@@ -39,7 +39,7 @@ div.experience:hover h4.job-title:after {
   font-family: "FontAwesome";
   content: "\f060";
   /* fa-arrow-right*/
-  color: grey; }
+  color: #545E6C; }
 
 .affix-top, .affix {
   position: static; }
