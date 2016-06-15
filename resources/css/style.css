@@ -135,7 +135,7 @@ section.aboutme::after {
   content: "\f063";
   /* fa-arrow-right*/
   float: right;
-  color: #DDDDDD; }
+  color: #545E6C; }
 
 .accordion-toggle.collapsed h4:after {
   content: "\f061";

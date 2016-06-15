@@ -171,12 +171,11 @@ section.aboutme::after {
 	background-color: $seperator-color;
 }
 
-
 .accordion-toggle h4:after {
 	font-family:"FontAwesome";
 	content:"\f063";  /* fa-arrow-right*/
 	float: right;
-	color: $seperator-color;
+	color: $text-color;
 }
 
 .accordion-toggle.collapsed h4:after {
