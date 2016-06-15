@@ -23,6 +23,12 @@ h1, h2 {
   /*background-color: $accent-color1;*/
   border-left: 2px solid #545E6C; }
 
+div.experience:hover h4.job-title:after {
+  font-family: "FontAwesome";
+  content: "\f060";
+  /* fa-arrow-right*/
+  color: grey; }
+
 .affix-top, .affix {
   position: static; }
 
@@ -238,7 +244,7 @@ section#skills .progress.level .progress-bar:last-child {
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  .experience {
+  section.experience {
     border-left: none;
     border-top: 3px dotted #DDDDDD; }
 
