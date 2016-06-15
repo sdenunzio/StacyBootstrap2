@@ -25,18 +25,6 @@ h1, h2 {
 .affix-top, .affix {
   position: static; }
 
-@media (min-width: 979px) {
-  #contactInfo.affix-top {
-    position: static;
-    width: 16%;
-    padding: 1em; }
-
-  #contactInfo.affix {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 16%;
-    overflow: hidden; } }
 .panel-title,
 .sub-title,
 .reg-icon {
@@ -251,14 +239,12 @@ section#skills .progress.level .progress-bar:last-child {
     border-top: 3px dotted #DDDDDD; }
 
   .sidebar {
-    border-left: none; } }
+    border-left: none; }
+
+  .github-fork-ribbon {
+    visibility: hidden; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .profile, .profile-title {
-    font-size: 24px; } }
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* For portrait layouts only */
   .profile, .profile-title {
     font-size: 24px; } }
 /* Extra Small Devices, Phones */
@@ -269,5 +255,17 @@ section#skills .progress.level .progress-bar:last-child {
   .profile, .profile-title {
     text-align: center;
     font-size: 24px; } }
+@media (min-width: 979px) {
+  #contactInfo.affix-top {
+    position: static;
+    width: 16%;
+    padding: 1em; }
+
+  #contactInfo.affix {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 16%;
+    overflow: hidden; } }
 
 /*# sourceMappingURL=style.css.map */
