@@ -13,7 +13,8 @@
   color: #fff; }
 
 h1, h2 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 20px; }
 
 .col-md-6 {
   padding: 0 3em 0 3em; }
@@ -44,12 +45,11 @@ h1, h2 {
   font-weight: 500; }
 
 .profile-pic {
-  perspective: 500px;
   padding: 1em;
   /*text-align:center;*/ }
 
 .profile-pic:hover {
-  transform: rotateY(180deg); }
+  opacity: .98; }
 
 .contact-list {
   padding: 20px;
@@ -65,6 +65,10 @@ h1, h2 {
   margin: 5px 0px 5px 0px;
   height: 5px;
   background-color: #DDDDDD; }
+
+.column {
+  display: inline-block;
+  vertical-align: top; }
 
 /* Aboutme seperator formatting */
 section.aboutme {
@@ -83,10 +87,6 @@ section.aboutme::after {
   position: absolute;
   content: '';
   pointer-events: none; }
-
-.column {
-  display: inline-block;
-  vertical-align: top; }
 
 section.aboutme::after {
   left: 50%;
@@ -108,7 +108,10 @@ section.aboutme::after {
 /* end about me*/
 .reg-icon, .am-icon {
   float: left;
-  padding: .25em; }
+  padding: 0 5px 0 5px; }
+
+.fa-tasks {
+  margin-top: 5px; }
 
 .am-icon {
   color: #fff; }

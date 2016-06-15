@@ -24,6 +24,7 @@ $back-ground-color: #fff;
 
 h1,h2{
 	text-transform: uppercase;
+	margin-bottom:20px;
 }
 
 .col-md-6{
@@ -38,8 +39,6 @@ h1,h2{
 .affix-top,.affix{
  position: static;
 }
-
-
 
 .panel-title,
 .sub-title,
@@ -65,13 +64,12 @@ h1,h2{
 }
 
 .profile-pic {
-	perspective: 500px;
 	padding: 1em;
 	/*text-align:center;*/
 }
 
 .profile-pic:hover{
-	transform: rotateY(180deg);
+	opacity:.98;
 }
 
 .contact-list{
@@ -87,13 +85,17 @@ h1,h2{
 		text-decoration: none;
 		color: $accent-color2;
 	}
-
 }
 
 .panel-seperator{
 	margin: 5px 0px 5px 0px;
 	height: 5px;
 	background-color: $seperator-color;
+}
+
+.column {
+	display: inline-block;
+	vertical-align: top;
 }
 
 /* Aboutme seperator formatting */
@@ -114,11 +116,6 @@ section.aboutme::after {
 	position: absolute;
 	content: '';
 	pointer-events: none;
-}
-
-.column {
-	display: inline-block;
-	vertical-align: top;
 }
 
 section.aboutme::after {
@@ -144,7 +141,12 @@ section.aboutme::after {
 /* end about me*/
 .reg-icon, .am-icon{
 	float: left;
-	padding: .25em;
+	padding: 0 5px 0 5px;
+}
+
+.fa-tasks{
+	margin-top: 5px;
+
 }
 
 .am-icon{
