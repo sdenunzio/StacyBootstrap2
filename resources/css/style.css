@@ -37,6 +37,7 @@ h1, h2 {
 
 div.experience:hover h4.job-title:after {
   font-family: "FontAwesome";
+  font-size: 16px;
   content: "\f060";
   /* fa-arrow-right*/
   color: #545E6C; }
@@ -245,6 +246,15 @@ section#skills .progress.level {
 section#skills .progress.level .progress-bar:last-child {
   border-right: none; }
 
+section#skills .progress:not(.level) .progress-bar {
+  animation: progressmove 4s;
+  animation-fill-mode: forwards; }
+
+@keyframes progressmove {
+  100% {
+    width: width; }
+  0% {
+    width: 0px; } }
 .footer {
   height: 40px;
   background-color: #545E6C; }
