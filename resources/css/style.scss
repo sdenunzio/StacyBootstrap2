@@ -7,7 +7,7 @@
 
 $accent-color1:  #769F41;
 $accent-color2:  #3F8689;
-$seperator-color: #EEEEEE;
+$seperator-color: #DDDDDD;
 $text-color: #545E6C;
 $border-dotted: 3px dotted $seperator-color;
 $back-ground-color: #fff;
@@ -15,7 +15,6 @@ $back-ground-color: #fff;
 /* re-compile custom bootstrap with container background (update json config)*/
 .container{
 	background-color: $back-ground-color;
-	border: 1px solid $seperator-color;
 }
 
 .github-fork-ribbon.right-top:before{
@@ -26,22 +25,47 @@ h1,h2{
 	text-transform: uppercase;
 }
 
-.panel-title{
+.col-md-6{
+	padding: 2em;
+}
+
+.sidebar{
+	/*background-color: $accent-color1;*/
+	border-left: 2px solid $text-color;
+}
+
+.affix-top,.affix{
+ position: static;
+}
+
+@media (min-width: 979px) {
+  #contactInfo.affix-top {
+    position: static;
+		width:16%;
+		padding: 1em;
+  }
+
+  #contactInfo.affix {
+    position: fixed;
+    top:10px;
+		left: 10px;
+    width:16%;
+		overflow: hidden;
+  }
+}
+
+.panel-title,
+.sub-title,
+.reg-icon{
 	color: $accent-color1;
 }
 
 .sub-title{
-	color: $accent-color1;
 	font-style: italic;
 }
 
-.job-title{
+.job-title, .profile-title{
 	color: $accent-color2;
-}
-
-.header{
-	background-color: $back-ground-color;
-	height: 20px
 }
 
 .profile{
@@ -50,12 +74,12 @@ h1,h2{
 }
 
 .profile-title{
-	color: $accent-color2;
 	font-weight: 500;
 }
 
 .profile-pic {
 	perspective: 500px;
+	padding: 1em;
 	/*text-align:center;*/
 }
 
@@ -72,14 +96,9 @@ h1,h2{
 		padding: 0px 0px 0px 0px;
 	}
 
-	a:hover{
+	a:hover, a:focus{
 		text-decoration: none;
-		color: $text-color;
-	}
-
-	a:focus{
-		text-decoration: none;
-		color: $text-color;
+		color: $accent-color2;
 	}
 
 }
@@ -93,10 +112,13 @@ h1,h2{
 /* Aboutme seperator formatting */
 section.aboutme {
 	position: relative;
-	padding: 2em ;
-	background: $accent-color2;
+	padding: 30px 60px 30px 60px ;
+	background: $accent-color1;
 	color: #fff;
-	text-align: center;
+	font-size: 17px;
+	font-weight: 400;
+	/*text-align: center;*/
+	margin-bottom: 30px;
 }
 
 /* Common style for pseudo-elements */
@@ -112,8 +134,7 @@ section.aboutme::after {
 	vertical-align: top;
 }
 
-.ss-style-triangles::before,
-.ss-style-triangles::after{
+section.aboutme::after {
 	left: 50%;
 	width: 50px;
 	height: 50px;
@@ -128,19 +149,20 @@ section.aboutme::after {
 }
 
 .ss-style-triangles::after {
-	bottom: -30px;
+	bottom: -20px;
 	z-index: 10;
-  background: $back-ground-color;
+  background: $accent-color1;
 }
-
 
 /* end about me*/
-.reg-icon{
-	color: $accent-color1;
+.reg-icon, .am-icon{
 	float: left;
-	padding: 5px;
+	padding: .25em;
 }
 
+.am-icon{
+	color: $back-ground-color;
+}
 .panel-heading {
 	cursor: pointer;
 }
@@ -154,7 +176,7 @@ section.aboutme::after {
 	font-family:"FontAwesome";
 	content:"\f063";  /* fa-arrow-right*/
 	float: right;
-	color: grey;
+	color: $seperator-color;
 }
 
 .accordion-toggle.collapsed h4:after {
@@ -180,7 +202,6 @@ section.aboutme::after {
 	border-style: none;
 	border-top: $border-dotted;
 }
-
 
 .references a{
 	color: $accent-color2;
@@ -291,16 +312,10 @@ section#skills .progress.level .progress-bar:last-child {
 @media only screen and (max-width : 768px){
 
 	.profile, .profile-title{
-		text-align: center;
 		font-size: 24px;
 	}
 
 	.contact-list{
-		text-align: center;
-	}
-
-	blockquote{
-		border-left:none;
 		text-align: center;
 	}
 

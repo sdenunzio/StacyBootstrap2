@@ -6,8 +6,7 @@
 */
 /* re-compile custom bootstrap with container background (update json config)*/
 .container {
-  background-color: #fff;
-  border: 1px solid #EEEEEE; }
+  background-color: #fff; }
 
 .github-fork-ribbon.right-top:before {
   background-color: #545E6C; }
@@ -15,30 +14,49 @@
 h1, h2 {
   text-transform: uppercase; }
 
-.panel-title {
+.col-md-6 {
+  padding: 2em; }
+
+.sidebar {
+  /*background-color: $accent-color1;*/
+  border-left: 2px solid #545E6C; }
+
+.affix-top, .affix {
+  position: static; }
+
+@media (min-width: 979px) {
+  #contactInfo.affix-top {
+    position: static;
+    width: 16%;
+    padding: 1em; }
+
+  #contactInfo.affix {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 16%;
+    overflow: hidden; } }
+.panel-title,
+.sub-title,
+.reg-icon {
   color: #769F41; }
 
 .sub-title {
-  color: #769F41;
   font-style: italic; }
 
-.job-title {
+.job-title, .profile-title {
   color: #3F8689; }
-
-.header {
-  background-color: #fff;
-  height: 20px; }
 
 .profile {
   font-size: 40px;
   font-weight: 600; }
 
 .profile-title {
-  color: #3F8689;
   font-weight: 500; }
 
 .profile-pic {
   perspective: 500px;
+  padding: 1em;
   /*text-align:center;*/ }
 
 .profile-pic:hover {
@@ -50,25 +68,25 @@ h1, h2 {
   .contact-list a {
     color: #545E6C;
     padding: 0px 0px 0px 0px; }
-  .contact-list a:hover {
+  .contact-list a:hover, .contact-list a:focus {
     text-decoration: none;
-    color: #545E6C; }
-  .contact-list a:focus {
-    text-decoration: none;
-    color: #545E6C; }
+    color: #3F8689; }
 
 .panel-seperator {
   margin: 5px 0px 5px 0px;
   height: 5px;
-  background-color: #EEEEEE; }
+  background-color: #DDDDDD; }
 
 /* Aboutme seperator formatting */
 section.aboutme {
   position: relative;
-  padding: 2em;
-  background: #3F8689;
+  padding: 30px 60px 30px 60px;
+  background: #769F41;
   color: #fff;
-  text-align: center; }
+  font-size: 17px;
+  font-weight: 400;
+  /*text-align: center;*/
+  margin-bottom: 30px; }
 
 /* Common style for pseudo-elements */
 section.aboutme::before,
@@ -81,8 +99,7 @@ section.aboutme::after {
   display: inline-block;
   vertical-align: top; }
 
-.ss-style-triangles::before,
-.ss-style-triangles::after {
+section.aboutme::after {
   left: 50%;
   width: 50px;
   height: 50px;
@@ -95,28 +112,30 @@ section.aboutme::after {
   background: #fff; }
 
 .ss-style-triangles::after {
-  bottom: -30px;
+  bottom: -20px;
   z-index: 10;
-  background: #fff; }
+  background: #769F41; }
 
 /* end about me*/
-.reg-icon {
-  color: #769F41;
+.reg-icon, .am-icon {
   float: left;
-  padding: 5px; }
+  padding: .25em; }
+
+.am-icon {
+  color: #fff; }
 
 .panel-heading {
   cursor: pointer; }
 
 .panel-heading:hover {
-  background-color: #EEEEEE; }
+  background-color: #DDDDDD; }
 
 .accordion-toggle h4:after {
   font-family: "FontAwesome";
   content: "\f063";
   /* fa-arrow-right*/
   float: right;
-  color: grey; }
+  color: #DDDDDD; }
 
 .accordion-toggle.collapsed h4:after {
   content: "\f061";
@@ -124,19 +143,19 @@ section.aboutme::after {
 
 .border-left {
   border-style: none;
-  border-left: 3px dotted #EEEEEE; }
+  border-left: 3px dotted #DDDDDD; }
 
 .border-right {
   border-style: none;
-  border-right: 3px dotted #EEEEEE; }
+  border-right: 3px dotted #DDDDDD; }
 
 .border-bottom {
   border-style: none;
-  border-bottom: 3px dotted #EEEEEE; }
+  border-bottom: 3px dotted #DDDDDD; }
 
 .border-top {
   border-style: none;
-  border-top: 3px dotted #EEEEEE; }
+  border-top: 3px dotted #DDDDDD; }
 
 .references a {
   color: #3F8689; }
@@ -192,7 +211,7 @@ section#skills .progress {
     background-color: #262B37;
     border-right: 2px solid #769F41;
     box-shadow: none;
-    color: #EEEEEE;
+    color: #DDDDDD;
     font-size: 12px;
     font-weight: 300;
     line-height: 33px;
@@ -227,7 +246,7 @@ section#skills .progress.level .progress-bar:last-child {
 @media only screen and (max-width: 992px) {
   .experience {
     border-left: none;
-    border-top: 3px dotted #EEEEEE; }
+    border-top: 3px dotted #DDDDDD; }
 
   .contact-list {
     border-left: none;
@@ -235,14 +254,9 @@ section#skills .progress.level .progress-bar:last-child {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .profile, .profile-title {
-    text-align: center;
     font-size: 24px; }
 
   .contact-list {
-    text-align: center; }
-
-  blockquote {
-    border-left: none;
     text-align: center; } }
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
