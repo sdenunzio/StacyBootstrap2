@@ -198,15 +198,11 @@ section.aboutme::after {
 }
 
 /*fade in sections, nice effect to loading the screen*/
-section{
+
+.container-fluid{
 	opacity:0;
 	animation: myappear 2s;
 	animation-fill-mode: forwards;
-	@for $i from 1 through 9 {
-		&:nth-child(#{$i}) {
-			animation-delay:0.3s * $i;
-		}
-	}
 }
 
 /* Chrome, Safari, Opera */
