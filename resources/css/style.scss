@@ -52,6 +52,7 @@ div.experience:hover h4.job-title:after{
 	color: $text-color;
 }
 
+
 .affix-top,.affix{
 	position: static;
 }
@@ -62,6 +63,7 @@ div.experience:hover h4.job-title:after{
 .contact-info{
 	color: $accent-color1;
 }
+
 
 .sub-title{
 	font-style: italic;
@@ -74,7 +76,6 @@ div.experience:hover h4.job-title:after{
 .profile{
 	font-size: 40px;
 	font-weight: 600;
-	text-align: center;
 }
 
 .profile-title{
@@ -120,7 +121,7 @@ section.aboutme {
 	font-size: 17px;
 	font-weight: 400;
 	/*text-align: center;*/
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 }
 
 /* Common style for pseudo-elements */
@@ -317,7 +318,6 @@ section#skills .progress:not(.level){
 @media only screen and (max-width : 992px) {
 	section.experience{
 		border-left:none;
-		border-top: $border-dotted;
 	}
 
 	.sidebar{
