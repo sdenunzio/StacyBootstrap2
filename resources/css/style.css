@@ -158,7 +158,7 @@ section.aboutme::after {
 .references a {
   color: #3F8689; }
 
-/*fade in sections, nice effect to loading the screen*/
+/*fade in sections, nice effect to loading the screen with the progress bars*/
 .container-fluid {
   opacity: 0;
   animation: myappear 2s;
