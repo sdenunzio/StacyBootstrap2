@@ -61,9 +61,6 @@ div.experience:hover h4.job-title:after {
   font-size: 40px;
   font-weight: 600; }
 
-.profile-title {
-  font-weight: 500; }
-
 .profile-pic {
   padding: 1em;
   /*text-align:center;*/ }
@@ -81,10 +78,6 @@ div.experience:hover h4.job-title:after {
   .contact-list a:hover, .contact-list a:focus {
     text-decoration: none;
     color: #3F8689; }
-
-.column {
-  display: inline-block;
-  vertical-align: top; }
 
 /* Aboutme seperator formatting */
 section.aboutme {
@@ -122,15 +115,12 @@ section.aboutme::after {
   background: #769F41; }
 
 /* end about me*/
-.reg-icon, .am-icon {
+.reg-icon {
   float: left;
   padding: 0 5px 0 5px; }
 
 .fa-tasks {
   margin-top: 5px; }
-
-.am-icon {
-  color: #fff; }
 
 .panel-heading {
   cursor: pointer; }
@@ -255,9 +245,6 @@ section#skills .progress:not(.level) .progress-bar {
   height: 40px;
   background-color: #545E6C; }
 
-.left-sidebar {
-  width: 25%; }
-
 .copyright {
   padding: 10px 5px 0px 0px;
   color: #fff; }
@@ -269,10 +256,7 @@ section#skills .progress:not(.level) .progress-bar {
     border-left: none; }
 
   .sidebar {
-    border-left: none; }
-
-  .github-fork-ribbon {
-    visibility: hidden; } }
+    border-left: none; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .profile, .profile-title {
@@ -282,12 +266,12 @@ section#skills .progress:not(.level) .progress-bar {
   .copyright {
     text-align: center; }
 
-  .profile, .profile-title {
+  .profile {
     text-align: center;
     font-size: 24px; } }
 @media (min-width: 992px) {
   .contactInfo .affix-top {
-    /*position: static;*/
+    position: static;
     width: inherit;
     padding: 1em; }
 
