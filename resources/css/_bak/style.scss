@@ -1,0 +1,344 @@
+/*
+# Template Name: Bootstrap Resume by Stacy Denunzio
+# Version: 1.1 // I have a lot to learn including fully utilizing Sass (scss), @Media breakpoint support in BS3,
+# 		default grid classes for xs, sm,etc breakpoints and push/pull of columns.
+# Author: Stacy Denunzio
+*/
+
+$accent-color1:  #769F41;
+$accent-color2:  #3F8689;
+$seperator-color: #EEEEEE;
+$text-color: #545E6C;
+$border-dotted: 3px dotted $seperator-color;
+$back-ground-color: #fff;
+
+/* re-compile custom bootstrap with container background (update json config)*/
+.container{
+	background-color: $back-ground-color;
+	border: 1px solid $seperator-color;
+}
+
+.github-fork-ribbon.right-top:before{
+	background-color: $text-color;
+}
+
+h1,h2{
+	text-transform: uppercase;
+}
+
+.panel-title{
+	color: $accent-color1;
+}
+
+.sub-title{
+	color: $accent-color1;
+	font-style: italic;
+}
+
+.job-title{
+	color: $accent-color2;
+}
+
+.header{
+	background-color: $back-ground-color;
+	height: 20px
+}
+
+.profile{
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.profile-title{
+	color: $accent-color2;
+	font-weight: 500;
+}
+
+.profile-pic {
+	perspective: 500px;
+	/*text-align:center;*/
+}
+
+.profile-pic:hover{
+	transform: rotateY(180deg);
+}
+
+.contact-list{
+	padding: 20px;
+	font-size: 18px;
+
+	a{
+		color: $text-color;
+		padding: 0px 0px 0px 0px;
+	}
+
+	a:hover{
+		text-decoration: none;
+		color: $text-color;
+	}
+
+	a:focus{
+		text-decoration: none;
+		color: $text-color;
+	}
+
+}
+
+.panel-seperator{
+	margin: 5px 0px 5px 0px;
+	height: 5px;
+	background-color: $seperator-color;
+}
+
+/* Aboutme seperator formatting */
+section{
+
+}
+section.aboutme {
+	position: relative;
+	padding: 2em ;
+	background: $accent-color2;
+	color: #fff;
+	/*text-align: center;*/
+	margin-bottom: 30px;
+}
+
+/* Common style for pseudo-elements */
+section.aboutme::before,
+section.aboutme::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+.column {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.ss-style-triangles::before,
+section.aboutme::after {
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.ss-style-triangles::before {
+	top: -30px;
+	z-index: 10;
+	background: $back-ground-color;
+}
+
+.ss-style-triangles::after {
+	bottom: -20px;
+	z-index: 10;
+  background: $accent-color2;
+}
+
+/* end about me*/
+.reg-icon{
+	color: $accent-color1;
+	float: left;
+	padding: 5px;
+}
+
+.panel-heading {
+	cursor: pointer;
+}
+
+.panel-heading:hover{
+	background-color: $seperator-color;
+}
+
+
+.accordion-toggle h4:after {
+	font-family:"FontAwesome";
+	content:"\f063";  /* fa-arrow-right*/
+	float: right;
+	color: grey;
+}
+
+.accordion-toggle.collapsed h4:after {
+	content:"\f061"; /* fa-arrow-down*/
+}
+
+.border-left{
+	border-style: none;
+	border-left: $border-dotted;
+}
+
+.border-right{
+	border-style: none;
+	border-right: $border-dotted;
+}
+
+.border-bottom{
+	border-style: none;
+	border-bottom: $border-dotted;
+}
+
+.border-top{
+	border-style: none;
+	border-top: $border-dotted;
+}
+
+
+.references a{
+	color: $accent-color2;
+}
+
+section{
+	opacity:0;
+	animation: myappear 2s;
+	animation-fill-mode: forwards;
+	@for $i from 1 through 9 {
+		&:nth-child(#{$i}) {
+			animation-delay:0.3s * $i;
+		}
+	}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myappear {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myappear {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+.skillchart{
+	padding: 10px;
+}
+
+section#skills .progress {
+	background-color:$text-color ;
+	border-radius: 0;
+	border: 1px solid $text-color;
+	box-shadow: none;
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	margin-bottom: 12px;
+
+	.progress-bar {
+		background-color: #262B37;
+		border-right: 2px solid $accent-color1;
+		box-shadow: none;
+		color: $seperator-color;
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 33px;
+		text-transform: uppercase;
+	}
+
+}
+
+section#skills .progress.level {
+	background-color: inherit;
+	border: 0;
+	border-bottom: 1px dotted $text-color;
+	border-left: 1px dotted $text-color;
+	border-right: 1px dotted $text-color;
+
+	.progress-bar {
+		background-color: inherit;
+		box-shadow: none;
+		border-right: 1px dotted $text-color;
+		color: #00a69a;
+		font-size: 11px;
+	}
+}
+
+section#skills .progress.level .progress-bar:last-child {
+	border-right: none;
+}
+
+.footer{
+	height: 40px;
+	background-color: #545E6C;
+
+}
+
+.copyright{
+	padding: 10px 5px 0px 0px;
+	color: #fff;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.experience{
+		border-left:none;
+		border-top: $border-dotted;
+	}
+
+	.contact-list{
+		border-left:none;
+			text-align: center;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+
+	.profile, .profile-title{
+		text-align: center;
+		font-size: 24px;
+	}
+
+	.contact-list{
+		text-align: center;
+	}
+
+	blockquote{
+		border-left:none;
+		text-align: center;
+	}
+
+}
+
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	/* For portrait layouts only */
+	.contact-list{
+		text-align: center;
+		border-left:none;
+	}
+
+	.profile, .profile-title{
+		font-size: 24px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.contact-list{
+		text-align: center;
+		border-left:none;
+	}
+
+	.copyright{
+		text-align:center;
+	}
+	.profile, .profile-title{
+		text-align: center;
+		font-size: 24px;
+	}
+
+	blockquote{
+		border-left:none;
+	}
+}
