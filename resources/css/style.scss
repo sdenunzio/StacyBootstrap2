@@ -199,7 +199,6 @@ section.aboutme::after {
 
 /*fade in sections, nice effect to loading the screen with the progress bars*/
 .container-fluid{
-	opacity:0;
 	animation: myappear 2s;
 	animation-fill-mode: forwards;
 }
