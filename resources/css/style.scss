@@ -76,6 +76,7 @@ div.experience:hover h4.job-title:after{
 .profile{
 	font-size: 40px;
 	font-weight: 600;
+	width:75%;
 }
 
 .profile-pic {
@@ -88,9 +89,12 @@ div.experience:hover h4.job-title:after{
 }
 
 .contact-list{
-	padding-left: 25%;
-	padding-right: 25%;
 	font-size: 18px;
+	width:75%;
+
+	li{
+		padding-bottom: 10px;
+	}
 
 	a{
 		color: $text-color;
@@ -174,22 +178,18 @@ section.aboutme::after {
 }
 
 .border-left{
-	border-style: none;
 	border-left: $border-dotted;
 }
 
 .border-right{
-	border-style: none;
 	border-right: $border-dotted;
 }
 
 .border-bottom{
-	border-style: none;
 	border-bottom: $border-dotted;
 }
 
 .border-top{
-	border-style: none;
 	border-top: $border-dotted;
 }
 
@@ -264,7 +264,7 @@ section#skills .progress.level .progress-bar:last-child {
 
 section#skills .progress:not(.level){
 	.progress-bar{
-  	animation: progressmove 4s;
+  	animation: progressmove 3s;
   	animation-fill-mode: forwards;
 	}
 }
@@ -298,6 +298,11 @@ section#skills .progress:not(.level){
 
 	.sidebar{
 		border-left: none;
+	}
+
+	.contact-list{
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
 }

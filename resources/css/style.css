@@ -59,7 +59,8 @@ div.experience:hover h4.job-title:after {
 
 .profile {
   font-size: 40px;
-  font-weight: 600; }
+  font-weight: 600;
+  width: 75%; }
 
 .profile-pic {
   padding: 1em;
@@ -69,9 +70,10 @@ div.experience:hover h4.job-title:after {
   opacity: .98; }
 
 .contact-list {
-  padding-left: 25%;
-  padding-right: 25%;
-  font-size: 18px; }
+  font-size: 18px;
+  width: 75%; }
+  .contact-list li {
+    padding-bottom: 10px; }
   .contact-list a {
     color: #545E6C;
     padding: 0px 0px 0px 0px; }
@@ -140,19 +142,15 @@ section.aboutme::after {
   /* fa-arrow-down*/ }
 
 .border-left {
-  border-style: none;
   border-left: 3px dotted #DDDDDD; }
 
 .border-right {
-  border-style: none;
   border-right: 3px dotted #DDDDDD; }
 
 .border-bottom {
-  border-style: none;
   border-bottom: 3px dotted #DDDDDD; }
 
 .border-top {
-  border-style: none;
   border-top: 3px dotted #DDDDDD; }
 
 .references a {
@@ -214,7 +212,7 @@ section#skills .progress.level .progress-bar:last-child {
   border-right: none; }
 
 section#skills .progress:not(.level) .progress-bar {
-  animation: progressmove 4s;
+  animation: progressmove 3s;
   animation-fill-mode: forwards; }
 
 @keyframes progressmove {
@@ -237,7 +235,11 @@ section#skills .progress:not(.level) .progress-bar {
     border-left: none; }
 
   .sidebar {
-    border-left: none; } }
+    border-left: none; }
+
+  .contact-list {
+    padding-left: 5px;
+    padding-right: 5px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .profile, .profile-title {
