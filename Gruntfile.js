@@ -86,6 +86,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-uncss');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+  grunt.registerTask('default', ['uncss','jshint', 'qunit', 'concat', 'uglify']);
 
 };
