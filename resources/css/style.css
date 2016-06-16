@@ -285,7 +285,7 @@ section#skills .progress:not(.level) .progress-bar {
   .profile, .profile-title {
     text-align: center;
     font-size: 24px; } }
-@media (min-width: 979px) {
+@media (min-width: 992px) {
   .contactInfo .affix-top {
     /*position: static;*/
     width: inherit;
