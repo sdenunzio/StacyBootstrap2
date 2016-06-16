@@ -303,6 +303,7 @@ section#skills .progress:not(.level){
 	.contact-list{
 		padding-left: 5px;
 		padding-right: 5px;
+		border-bottom: none;
 	}
 
 }
@@ -321,7 +322,6 @@ section#skills .progress:not(.level){
 		text-align:center;
 	}
 	.profile{
-		text-align: center;
 		font-size: 24px;
 	}
 }

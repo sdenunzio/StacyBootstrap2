@@ -239,7 +239,8 @@ section#skills .progress:not(.level) .progress-bar {
 
   .contact-list {
     padding-left: 5px;
-    padding-right: 5px; } }
+    padding-right: 5px;
+    border-bottom: none; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .profile, .profile-title {
@@ -250,7 +251,6 @@ section#skills .progress:not(.level) .progress-bar {
     text-align: center; }
 
   .profile {
-    text-align: center;
     font-size: 24px; } }
 @media (min-width: 992px) {
   .contactInfo .affix-top {
