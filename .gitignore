@@ -47,6 +47,5 @@ Temporary Items
 .apdisk
 
 # Projrect Folders
-_bak
-node_modules
-ProjFiles
+_bak/
+node_modules/

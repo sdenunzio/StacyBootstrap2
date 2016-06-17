@@ -26,12 +26,12 @@ h3, h4 {
   /*background-color: $accent-color1;*/
   /*border-left: 2px solid $text-color;*/ }
 
-div.experience:hover h4.job-title:after {
+div.experience:hover h4.job-title:after, section.education:hover h4.job-title:after {
   font-family: "FontAwesome";
   font-size: 16px;
   content: "\f060";
   /* fa-arrow-right*/
-  color: #545E6C; }
+  color: grey; }
 
 .affix-top, .affix {
   position: static;
@@ -45,11 +45,13 @@ div.experience:hover h4.job-title:after {
   height: 100%;
   padding: 0; }
 
-.panel-title,
 .sub-title,
 .reg-icon,
 .contact-info {
   color: #769F41; }
+
+.panel-title {
+  color: #545E6C; }
 
 .sub-title {
   font-style: italic; }

@@ -41,11 +41,11 @@ h3,h4{
 	/*border-left: 2px solid $text-color;*/
 }
 
-div.experience:hover h4.job-title:after{
+div.experience:hover h4.job-title:after, section.education:hover h4.job-title:after{
 	font-family:"FontAwesome";
 	font-size: 16px;
 	content:"\f060";  /* fa-arrow-right*/
-	color: $text-color;
+	color: grey;
 }
 
 .affix-top,.affix{
@@ -62,11 +62,15 @@ div.experience:hover h4.job-title:after{
 	padding: 0;
 }
 
-.panel-title,
+
 .sub-title,
 .reg-icon,
 .contact-info{
 	color: $accent-color1;
+}
+
+.panel-title{
+	color: $text-color;
 }
 
 
