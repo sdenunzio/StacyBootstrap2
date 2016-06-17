@@ -24,7 +24,7 @@ h3, h4 {
 
 .sidebar {
   /*background-color: $accent-color1;*/
-  border-left: 2px solid #545E6C; }
+  /*border-left: 2px solid $text-color;*/ }
 
 div.experience:hover h4.job-title:after {
   font-family: "FontAwesome";
@@ -34,7 +34,16 @@ div.experience:hover h4.job-title:after {
   color: #545E6C; }
 
 .affix-top, .affix {
-  position: static; }
+  position: static;
+  background-size: 100% auto;
+  /*height: 100vh;*/
+  background-image: inherit; }
+
+.contactInfo {
+  background-image: url("../../resources/img/grey_wash_wall.png");
+  background-size: 100% auto;
+  height: 100%;
+  padding: 0; }
 
 .panel-title,
 .sub-title,
@@ -51,7 +60,8 @@ div.experience:hover h4.job-title:after {
 .profile {
   font-size: 40px;
   font-weight: 600;
-  width: 75%; }
+  width: 75%;
+  color: #fff; }
 
 .profile-pic {
   padding: 1em;
@@ -62,15 +72,18 @@ div.experience:hover h4.job-title:after {
 
 .contact-list {
   font-size: 18px;
-  width: 75%; }
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 0px 0px 5px;
+  border: 1px solid #595959; }
   .contact-list li {
     padding-bottom: 10px; }
   .contact-list a {
-    color: #545E6C;
+    color: #333;
     padding: 0px 0px 0px 0px; }
   .contact-list a:hover, .contact-list a:focus {
     text-decoration: none;
-    color: #3F8689; }
+    color: #b3b3b3; }
 
 /* Aboutme seperator formatting */
 section.aboutme {
@@ -213,7 +226,7 @@ section#skills .progress:not(.level) .progress-bar {
     width: 0px; } }
 .footer {
   height: 40px;
-  background-color: #545E6C; }
+  background-color: #333; }
 
 .copyright {
   padding: 10px 5px 0px 0px;
@@ -245,15 +258,17 @@ section#skills .progress:not(.level) .progress-bar {
     font-size: 24px; } }
 @media (min-width: 992px) {
   .contactInfo .affix-top {
-    position: static;
+    /*position: static;*/
     width: inherit;
-    padding: 1em; }
+    padding: 1em;
+    height: 100vh; }
 
   .contactInfo .affix {
     position: fixed;
     top: 0px;
     left: 0px;
     width: inherit;
-    overflow: hidden; } }
+    overflow: hidden;
+    height: 100vh; } }
 
 /*# sourceMappingURL=style.css.map */
